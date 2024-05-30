@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  background-color: #FFFFFF;
+}
+header .containerTop {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .containerTop .hamburgerButton {
+  display: none;
+}
+header .containerTop .logo img {
+  width: 160px;
+  height: auto;
+}
+header .containerTop nav {
+  width: 60%;
+}
+header .containerTop nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .containerTop nav ul li {
+  list-style: none;
+}
+header .containerTop nav ul li a {
+  font-size: 21px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+header .containerTop .icons {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .containerTop .icons i {
+  font-size: 26px;
+}
+
+#sectionOne {
+  background-color: #F0F0F2;
+}
+#sectionOne .containerSection {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  align-items: center;
+}
+#sectionOne .containerSection h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 80px;
+}
+#sectionOne .containerSection p {
+  font-size: 40px;
+}
+#sectionOne .containerSection button {
+  border: 2px solid white;
+  background-color: grey;
+  color: white;
+  font: weight 700px;
+  font-size: 16px;
+  height: 60px;
+  font-family: "Open Sans";
+  width: 20%;
+  text-align: center;
+  margin-right: 210px;
+  margin-top: 30px;
+}
+#sectionOne .containerSection .img {
+  margin-top: 100px;
+  width: 40%;
+  height: 40px;
+}
+
+@media screen and (max-width: 7oopx) {
+  .header {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .containerTop nav {
+    display: none;
+  }
+  .hamburgerButton {
+    display: block;
+  }
+}

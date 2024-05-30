@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    background-color: #FFFFFF;
+
+
+    .containerTop {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .hamburgerButton{
+            display: none;
+        }
+
+        .logo {
+            img {
+                width: 160px;
+                height: auto;
+            }
+        }
+
+
+        nav {
+            width: 60%;
+
+
+
+
+            ul {
+
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+
+                li {
+                    list-style: none;
+
+
+
+                    a {
+                        font-size: 21px;
+                        text-decoration: none;
+                        color: black;
+                        font-weight: 500;
+                    }
+
+                }
+
+            }
+
+        }
+
+
+
+
+
+        .icons {
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            i {
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+#sectionOne {
+    background-color: #F0F0F2;
+
+
+    .containerSection {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        align-items: center;
+
+
+        h1 {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 80px;
+
+        }
+
+        p {
+            font-size: 40px;
+        }
+
+        button {
+            border: 2px solid white;
+            background-color: grey;
+            color: white;
+            font: weight 700px;
+            font-size: 16px;
+            height: 60px;
+            font-family: "Open Sans";
+            width: 20%;
+            text-align: center;
+            margin-right: 210px;
+            margin-top: 30px;
+
+        }
+
+        .img {
+            // display: flex;
+            // text-align: right;
+            margin-top: 100px;
+            width: 40%;
+            height: 40px;
+        }
+    }
+}
+@media screen and (max-width: 7oopx) {
+    .header {
+        display: none;
+    }
+    }
+    @media screen and  (max-width: 700px ){
+        .containerTop nav{
+    
+            display: none;
+        }
+        .hamburgerButton{
+            display: block;
+        }
+    }
